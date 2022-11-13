@@ -7,7 +7,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'what is the title of your project?'
+        message: 'what is the title of your project?',
     },
     {
         type: 'input',
@@ -22,17 +22,18 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'how do you use this application?'
+        message: 'how do you use this application?',
     },
     {
-        type: 'list',
+        type: 'input',
         name: 'credit',
-        message: 'who would you like to credit?'
+        message: 'who would you like to credit?',
     },
     {
         type: 'list',
         name: 'license',
-        message: 'what kind of license does this application have?'
+        message: 'what kind of license does this application have?',
+        choices: ['MIT', 'nothing', 'still nothing'],
     },
     {
         type: 'input',
@@ -40,7 +41,7 @@ const questions = [
         message: 'what are the contribution guidelines?',
     },
     {
-        type: 'type',
+        type: 'input',
         name: 'test',
         message: 'do you have any test examples written? provide them here: ',
     },
