@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return
+    return`https://img.shields.io/github/license/${data.username}/${data.repo}/`
 };
 }
 
@@ -51,6 +51,7 @@ function generateMarkdown(data) {
   
 return `
 # ${data.title}
+  
   ${renderLicenseBadge()}
 
 ## Description
@@ -81,10 +82,6 @@ return `
 
   ${renderLicenseLink(data.license)} 
 
-## Badges
-    
-
-    
 ## How to Contribute
     
   ${data.contribution}
