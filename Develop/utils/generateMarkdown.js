@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return`https://img.shields.io/github/license/${data.username}/${data.repo}`
+    return`![license badge](https://img.shields.io/badge/license-${license}-blue.svg)`
 };
 }
 
